@@ -1,0 +1,225 @@
+#timeline-container {
+    position: relative;
+    display: block;
+    padding: 60px 0;
+    width: auto;
+    --xPos: 50%;
+    --yPos: 0px;
+
+    .svg-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 1;
+        background: transparent;
+
+
+        #timeline-svg {
+            display: block;
+            width: 100%;
+            height: 100%;
+            overflow: visible;
+
+            #svg-bg-path {
+                stroke: #a1927346;
+            }
+
+            #svg-fill-path {
+                transition: stroke-dashoffset 0.3s ease-out;
+            }
+        }
+    }
+
+    .timeline-item {
+        position: relative;
+        width: fit-content;
+        z-index: 2;
+        animation-fill-mode: both;
+        animation-timing-function: ease-out;
+        animation-timeline: view();
+        animation-range: entry 0% cover 80%;
+
+        &:hover {
+            .timeline-content {
+                transform: scale(1.03);
+                opacity: 1;
+                background: radial-gradient(100rem circle at var(--xPos) var(--yPos), rgba(#a19273, 1), transparent 15%);
+
+                &::before {
+                    opacity: 0;
+                }
+            }
+        }
+
+        .timeline-content {
+            border-radius: 0.5rem;
+            position: relative;
+            width: fit-content;
+            opacity: 0.6;
+            transition: transform 0.3s ease, opacity 0.5s ease, background 0.2s ease-out;
+            padding: 1.5px; // wichtig -> sonst ist um die Kästchen der Rahmen-effekt nicht da 
+
+            .timeline-back {
+                background-color: #222222;
+                border-radius: inherit;
+                transition: all 0.25s;
+                width: 100%;
+                height: 100%;
+                padding: 28px;
+                position: relative;
+                z-index: 2;
+
+                &::before {
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    position: absolute; // wichtig auf absolute -> sonst ist der innere Leuchte-effekt nicht da
+                    top: 0;
+                    left: 0;
+                    border-radius: inherit;
+                    background: radial-gradient(50rem circle at var(--xPos) var(--yPos), rgba(#918160, 0.1), transparent 45%);
+                    transition: all 0.25s ease-in-out;
+                    pointer-events: none;
+                    z-index: 1;
+                }
+
+                h1 {
+                    font-size: 22px;
+                    color: #a19273;
+                    font-weight: 400;
+                    margin-bottom: 10px;
+                    position: relative;
+                    transition: all 0.5s ease-in-out;
+
+                    &:hover {
+                        font-size: 28px;
+                        color: #bdb199;
+                        text-shadow: 0 0 5px #a19273;
+                    }
+                }
+
+                h2 {
+                    position: relative;
+                    font-size: 18px;
+                    color: #918160ab;
+                    font-weight: 300;
+                    margin-bottom: 16px;
+                }
+
+                p {
+                    position: relative;
+                    font-size: 16px;
+                    color: beige;
+                    font-weight: 200;
+                    text-transform: uppercase;
+                    line-height: 1.6;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+
+        &.left {
+            margin-right: auto;
+            animation-name: appear-left;
+            padding: 20px;
+            margin-bottom: 40px;
+
+            .content {
+                transform-origin: right center;
+            }
+        }
+
+        &.right {
+            margin-left: auto;
+            animation-name: appear-right;
+            padding: 20px;
+            margin-bottom: 40px;
+
+            .content {
+                transform-origin: left center;
+            }
+        }
+
+        &.active {
+            .timeline-content {
+                opacity: 1;
+                background: radial-gradient(200rem circle at var(--xPos) var(--yPos), rgba(#a19273, 1), transparent 15%);
+
+                .timeline-back::before {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.timeline-bullets {
+    list-style: disc;
+    color: #a19273;
+
+    li {
+        position: relative;
+        padding-left: 5px;
+        margin-bottom: 8px;
+        line-height: 1.5;
+    }
+}
+
+.highlight-container {
+    display: inline-flex;
+    flex-direction: column;
+    vertical-align: top;
+
+    .main-word {
+        display: block;
+        font-weight: 500;
+        font-size: 18px;
+        color: #a19273;
+    }
+
+    .sub-text {
+        display: block;
+        white-space: nowrap;
+        line-height: 1.2;
+        font-size: 16px;
+        font-weight: 300;
+        color: beige;
+    }
+}
+// Animation für die Timeline-Linie
+@keyframes fill-svg-path {
+    from {
+        stroke-dashoffset: var(--path-length);
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+// Animation für die kästchen die links auftauchen
+@keyframes appear-left {
+    from {
+        opacity: 0;
+        transform: scale(0.7) translateX(-60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateX(0);
+    }
+}
+// Animation für die Kästchen die rechts auftauchen
+@keyframes appear-right {
+    from {
+        opacity: 0;
+        transform: scale(0.7) translateX(60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateX(0);
+    }
+}

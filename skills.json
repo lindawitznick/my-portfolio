@@ -1,0 +1,66 @@
+[
+    {
+        "id": "html-chart",
+        "imageId": "html-logo",
+        "imgSrc": "bilder/svg/html.svg",
+        "label": "Fortschritt",
+        "percent": 75,
+        "name": "HTML"
+    },
+    {
+        "id": "css-chart",
+        "imageId": "css-logo",
+        "imgSrc": "bilder/svg/css.svg",
+        "label": "Fortschritt",
+        "percent": 75,
+        "name": "CSS"
+    },
+    {
+        "id": "js-chart",
+        "imageId": "js-logo",
+        "imgSrc": "bilder/svg/javascript.svg",
+        "label": "Fortschritt",
+        "percent": 55,
+        "name": "JavaScript"
+    },
+    {
+        "id": "java-chart",
+        "imageId": "java-logo",
+        "imgSrc": "bilder/svg/java.svg",
+        "label": "Fortschritt",
+        "percent": 60,
+        "name": "Java"
+    },
+    {
+        "id": "cpp-chart",
+        "imageId": "cpp-logo",
+        "imgSrc": "bilder/svg/c++.svg",
+        "label": "Fortschritt",
+        "percent": 20,
+        "name": "C++"
+    },
+    {
+        "id": "python-chart",
+        "imageId": "python-logo",
+        "imgSrc": "bilder/svg/python.svg",
+        "label": "Fortschritt",
+        "percent": 15,
+        "name": "Python"
+    },
+    {
+        "id": "php-chart",
+        "imageId": "php-logo",
+        "imgSrc": "bilder/svg/php.svg",
+        "label": "Fortschritt",
+        "percent": 20,
+        "name": "PHP"
+    },
+    {
+        "id": "adobe-chart",
+        "imageId": "adobe-logo",
+        "imgSrc": "bilder/svg/adobeCloud.svg",
+        "label": "Fortschritt",
+        "percent": 80,
+        "name": "Adobe"
+    }
+]

@@ -1,0 +1,66 @@
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+}
+.profile:hover .profil {
+  background: radial-gradient(200rem circle at var(--xPos) var(--yPos), #a19273, transparent 15%);
+}
+.profile .profil {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  position: relative;
+}
+.profile .profil:hover {
+  transform: scale(1);
+}
+.profile .profil:hover::before {
+  opacity: 1;
+}
+.profile .profil::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: inherit;
+  background: radial-gradient(100rem circle at var(--xPos) var(--yPos), rgba(145, 129, 96, 0.2), transparent 35%);
+  opacity: 0;
+  transition: all 0.15s ease-in-out;
+  pointer-events: none;
+}
+.profile .profil .profilImg {
+  width: 80%;
+  height: auto;
+  position: relative;
+  border-radius: 0.5rem;
+  border: 1px solid #a19273;
+  box-shadow: 0 0 5px #a19273;
+}
+.profile .profil .profilImg:hover {
+  transform: scale(1.01);
+}
+.profile .profil .profilBack {
+  background-color: #222222;
+  border-radius: inherit;
+  transition: all 0.25s;
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+}
+.profile .profil .profilText {
+  position: relative;
+  opacity: 1;
+}
+.profile .profil .profilText p {
+  font-weight: 200;
+  font-size: 17px;
+  color: white;
+  text-align: justify;
+}/*# sourceMappingURL=style_profil.css.map */

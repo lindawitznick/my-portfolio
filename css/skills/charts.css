@@ -1,0 +1,67 @@
+.visual-skills {
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2px;
+  opacity: 0.8;
+}
+.visual-skills:hover .skill {
+  background: radial-gradient(200rem circle at var(--xPos) var(--yPos), #a19273, transparent 15%);
+}
+.visual-skills .skill {
+  border-radius: 0.5rem;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+.visual-skills .skill:hover::before {
+  opacity: 1;
+}
+.visual-skills .skill::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: inherit;
+  background: radial-gradient(100rem circle at var(--xPos) var(--yPos), rgba(145, 129, 96, 0.1), transparent 25%);
+  opacity: 0;
+  transition: all 0.15s ease-in-out;
+}
+.visual-skills .skill .skill-background {
+  background-color: #222222;
+  border-radius: inherit;
+  transition: all 0.25;
+  width: 100%;
+  height: 100%;
+}
+.visual-skills .chart-heading {
+  font-family: "montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  text-align: center;
+  color: #b3a58a;
+  padding: 5px;
+  font-weight: 100;
+}
+.visual-skills .chart-container {
+  width: 100%;
+  max-width: 200px;
+  height: 200px;
+  position: relative;
+  transition: transform 0.3s ease;
+  margin: 0;
+}
+.visual-skills .chart-container:hover {
+  transform: scale(1.03);
+}
+.visual-skills .programming-stats {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}/*# sourceMappingURL=charts.css.map */

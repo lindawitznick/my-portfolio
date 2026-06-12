@@ -1,0 +1,268 @@
+@charset "UTF-8";
+
+:root {
+  --hauptfarbe-1: #a19273;
+  --nebenfarbe: #918160;
+  --aktzent-trans: #9181608e;
+  --box-hintergrund: #222222;
+  --textfarbe: beige;
+}
+
+html {
+  scroll-behavior: smooth;
+
+  body {
+    background-image: url(../bilder/background_glow.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    color: beige;
+    padding-top: 75px;
+    position: relative;
+    height: max-content;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    cursor: none;
+
+    a,
+    button {
+      cursor: none;
+    }
+  }
+}
+
+.custom-cursor-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #a19273;
+  border-radius: 50%;
+  box-shadow: 0 0 10px beige;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s ease, background-color 0.2s ease, width 0.2s ease, height 0.2s ease box-shadow 0.2s ease;
+
+  &.is-hovering {
+    width: 15px;
+    height: 15px;
+    background-color: #a19273;
+    box-shadow: 0 0 15px beige;
+  }
+}
+
+main {
+  margin-bottom: 400px;
+}
+
+section {
+  scroll-margin-top: 200px;
+}
+
+b {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.text-accent {
+  color: #a19273;
+}
+
+.scroll-area {
+  position: relative;
+}
+
+.navbar-nav .nav-link.active {
+  color: #918160 !important;
+  font-weight: 400;
+}
+
+.bg-black {
+  background-color: #000000;
+  color: #fff;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  margin-left: 20px;
+}
+
+
+// Seitenüberschriften 
+
+.seiten-ueberschrift {
+  scroll-margin-top: 100px;
+  margin-top: 400px;
+  text-align: center;
+  text-transform: uppercase;
+
+  h1 {
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #b3a58a;
+  }
+
+  h2 {
+    font-size: 25px;
+    margin-bottom: 40px;
+    font-weight: 200;
+    line-height: 1.5;
+    color: #918160;
+  }
+}
+
+// ------- Ende Seitenüberschriften
+
+
+
+// Effekt von auftauchenden Fenstern
+.appear {
+  animation-name: appear-effekt;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+  transition: all 0.1s ease;
+}
+
+@keyframes appear-effekt {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+//------ Ende--- Effekt
+
+//----Footer Style
+
+.portfolio-footer {
+  background-color: black;
+  padding: 20px 0;
+
+  .footer-brand {
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+
+    p {
+      white-space: nowrap;
+      color: beige;
+      font-weight: 300;
+      letter-spacing: 1px;
+      padding-left: 20px;
+    }
+  }
+
+  .footer-legal {
+    padding-right: 20px;
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    margin-top: 0;
+  }
+
+  .legal-link {
+    font-size: 18px;
+    color: beige;
+    font-weight: 300;
+    text-decoration: none;
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: #a19273;
+    }
+  }
+}
+
+
+
+//------ impressum style
+
+.impressum-all {
+  display: grid;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  opacity: 0.9;
+  border-radius: 0.5rem;
+
+  &:hover {
+    .impressum {
+      background: radial-gradient(400rem circle at var(--xPos) var(--yPos), rgba(#a19273, 1), transparent 15%);
+    }
+  }
+
+  .impressum {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    position: relative;
+
+    &:hover {
+
+      &::before {
+        opacity: 1;
+      }
+    }
+
+    .impressum-back {
+      background-color: #222222;
+      border-radius: 0.5rem;
+      transition: all 0.25s;
+      width: 100%;
+      height: 100%;
+      padding: 12px;
+    }
+
+  }
+
+  .impressum-content {
+    padding: 50px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: beige;
+    display: block;
+    flex-direction: column;
+    text-align: justify;
+
+    h4 {
+      font-size: 18px;
+      font-weight: 400;
+      color: #a19273;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 100;
+      line-height: 1.5;
+
+      a {
+        color: #a19273;
+
+      }
+    }
+  }
+}
+
+
+
+/*# sourceMappingURL=style.css.map */

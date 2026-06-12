@@ -1,0 +1,153 @@
+[
+    {
+        "datum": "Juli 2026 - Juli 2028",
+        "seite": "left",
+        "titel": "Fachinformatikerin für Anwendungsentwicklung (IHK), Umschulung",
+        "ort": "bei WBS Training SE, Schweinfurt",
+        "beschreibung": [
+            {
+                "text": "Java: Grundlegende Programmierung",
+                "highlight": "Java: Grundlegende Programmierung",
+                "subText": "Syntax, Kontrollstrukturen und erste Konsolenanwendungen"
+            },
+            {
+                "text": "Datenbanken und SQL: ",
+                "highlight": "Datenbanken und SQL: ",
+                "subText": "Design relationaler Datenbanken und Datenabfragen"
+            },
+            {
+                "text": "Strukturierte Softwareentwicklung: ",
+                "highlight": "Strukturierte Softwareentwicklung:",
+                "subText": "Logische Algorithmen und saubere Codestruktur (Clean Code)"
+            },
+            {
+                "text": "Objektorientiertes Programmieren: ",
+                "highlight": "Objektorientiertes Programmieren: ",
+                "subText": "Software-Modellierung mit Klassen, Vererbung und Kapselung"
+            }
+        ]
+    },
+    {
+        "datum": "Mai 2027",
+        "seite": "right",
+        "titel": "Projektmanagement Fachkraft (DEKRA) Zertifizierung",
+        "ort": "Im Rahmen der Umschulung",
+        "beschreibung": []
+    },
+    {
+        "datum": "Mai 2027 - April 2028",
+        "seite": "left",
+        "titel": "Betriebliches (Pflicht-)Praktikum - 9 Monate",
+        "ort": "In einem Unternehmen mit Ausbildereignung",
+        "beschreibung": []
+    },
+    {
+        "datum": "März 2026 - Mai 2026",
+        "seite": "right",
+        "titel": "IT-Vorbereitungskurs",
+        "ort": "bei WBS Training SE, Schweinfurt",
+        "beschreibung": [
+            {
+                "text": "Grundlagen, Algorithmen und Datenstrukturen: ",
+                "highlight": "Grundlagen, Algorithmen und Datenstrukturen: ",
+                "subText": "Essenzielle Programmierkonzepte, Datenstrukturen und logische Problemlösung"
+            },
+            {
+                "text": "Grundlagen der digitalen Sicherheit: ",
+                "highlight": "Grundlagen der digitalen Sicherheit: ",
+                "subText": "Grundwissen über Verschlüsselung, Bedrohungen und Schutzmaßnahmen in der IT"
+            },
+            {
+                "text": "Grundlagen der Netzwerktechnik: ",
+                "highlight": "Grundlagen der Netzwerktechnik: ",
+                "subText": "Verständnis von Netzwerkarchitekturen, Protokollen und Datenübertragung"
+            }
+        ]
+    },
+    {
+        "datum": "August 2023 - August 2025",
+        "seite": "left",
+        "titel": "Gestalterin für visuelles Marketing",
+        "ort": "bei New Yorker in Würzburg",
+        "beschreibung": [
+            {
+                "text": "Überwachung und Analyse der Warengruppen: ",
+                "highlight": "Überwachung und Analyse der Warengruppen: ",
+                "subText": "Sortimentsanalyse, Bestandsüberwachung und gezielte Verkaufsförderung"
+            },
+            {
+                "text": "Erfolgreiche Konzeption und Umsetzung visueller Marketingkonzepte: ",
+                "highlight": "Erfolgreiche Konzeption und Umsetzung visueller Marketingkonzepte: ",
+                "subText": "Kreative Planung und visuelle Gestaltung von Verkaufsflächen"
+            },
+            {
+                "text": "Durchführung von Mitarbeiterschulungen: ",
+                "highlight": "Durchführung von Mitarbeiterschulungen: ",
+                "subText": "Wissensvermittlung und Anleitung des Teams zur eigenständigen Umsetzung der visuellen Konzepte"
+            }
+        ]
+    },
+    {
+        "datum": "März 2020 - Juli 2023",
+        "seite": "right",
+        "titel": "Gestalterin für visuelles Marketing",
+        "ort": "bei Depot in Würzburg und Erlangen",
+        "beschreibung": []
+    },
+    {
+        "datum": "August 2016 - Februar 2020",
+        "seite": "left",
+        "titel": "Verkäuferin",
+        "ort": "bei Ecenter Schmidt in Ochsenfurt / Herm-Tankstelle in Giebelstadt",
+        "beschreibung": []
+    },
+    {
+        "datum": "Juli 2015 - April 2016",
+        "seite": "right",
+        "titel": "Werbetechnikerin",
+        "ort": "bei Bruxsafol Folien GmbH in Hammelburg",
+        "beschreibung": [
+            {
+                "text": "Anbringen von Sichtschutzfolien an und in Gebäuden: ",
+                "highlight": "Anbringen von Sichtschutzfolien an und in Gebäuden: ",
+                "subText": "Präzise Folierung von Glasflächen im Innen- und Außenbereich"
+            },
+            {
+                "text": "Anbringen von Sonnenschutzfolien in PKWs: ",
+                "highlight": "Anbringen von Sonnenschutzfolien in PKWs: ",
+                "subText": "Fachgerechte Montage von Tönungsfolien an Fahrzeugscheiben"
+            },
+            {
+                "text": "Anbringen von Steinschlagschutzfolien an PKWs: ",
+                "highlight": "Anbringen von Steinschlagschutzfolien an PKWs: ",
+                "subText": "Passgenauer Lackschutz durch hochwertige Fahrzeugfolierung"
+            }
+        ]
+    },
+    {
+        "datum": "September 2011 - Februar 2015",
+        "seite": "left",
+        "titel": "Ausbildung als Mediengestalterin",
+        "ort": "bei Konrad Triltsch GmbH in Ochsenfurt",
+        "beschreibung": [
+            {
+                "text": "Erfolgreicher Abschluss als Mediengestalterin",
+                "highlight": "Erfolgreicher Abschluss als Mediengestalterin",
+                "subText": "im Bereich Digital und Print - Gestaltung und Technik"
+            }
+        ]
+    },
+    {
+        "datum": "September 2009 - Juli 2011",
+        "seite": "right",
+        "titel": "Ausbildung als Verkäuferin",
+        "ort": "bei Galeria Kaufhof in Würzburg",
+        "beschreibung": [
+            {
+                "text": "Erfolgreicher Abschluss im Einzelhandel",
+                "highlight": "Erfolgreicher Abschluss im Einzelhandel",
+                "subText": ""
+            }
+        ]
+    }
+]

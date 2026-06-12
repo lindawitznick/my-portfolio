@@ -1,0 +1,157 @@
+.typing::after {
+  content: "|";
+  display: inline-block;
+  animation: blink 0.8s step-end infinite;
+  color: #a19273;
+  margin-left: 4px;
+}
+
+@keyframes blink {
+
+  from,
+  to {
+    color: transparent;
+  }
+
+  50% {
+    color: #a19273;
+  }
+}
+
+#typewriter * {
+  min-height: 1.2em;
+}
+
+#typewriter {
+  position: relative;
+
+
+  h1,
+  h2,
+  p {
+    visibility: hidden;
+  }
+
+  h1 {
+    font-weight: 300;
+    color: #b3a58a;
+    letter-spacing: 7px;
+    font-size: 62px;
+    text-align: justify;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-weight: 200;
+    font-size: 32px;
+    color: #918160;
+    text-align: justify;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin-top: 5px;
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: unset;
+    word-break: keep-all;
+    padding-right: 20px;
+  }
+}
+
+.typing-hidden {
+  visibility: hidden;
+}
+
+.main-section {
+  margin-top: 150px;
+  justify-content: center;
+}
+
+.space {
+  background-color: transparent;
+}
+
+hr {
+  color: #b3a58a;
+}
+
+.main-picture {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  opacity: 0.8;
+  width: auto;
+  height: auto;
+  --xPos: 50%;
+  --yPos: 50%;
+  margin-left: 50px;
+
+  .main-effekt {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    position: relative;
+    padding: 1.7px;
+    opacity: 1;
+    background: radial-gradient(100rem circle at var(--xPos) var(--yPos), rgba(#a19273, 1), transparent 15%);
+    transition: all 0.3s ease;
+
+    #picture {
+      width: auto;
+      height: auto;
+      border-radius: 0.5rem;
+    }
+  }
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+
+  .main-back {
+    background-color: rgba(0, 0, 0, 0.678);
+    border-radius: inherit;
+    transition: all 0.25s;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  width: auto;
+  transition: all 0.25s ease;
+
+  .button-lg {
+    display: inline-block;
+    background-color: transparent;
+    border: 0;
+
+    img {
+      display: block;
+      display: block;
+      width: 40px;
+      height: auto;
+      margin-right: 20px;
+      transition: all 0.5s ease;
+
+      &:hover {
+        transform: scale(1.08);
+        filter: brightness(0) saturate(100%) invert(96%) sepia(13%) saturate(481%) hue-rotate(20deg) brightness(103%) contrast(92%);
+      }
+    }
+  }
+
+
+}
+
+// Buttoneffekt
